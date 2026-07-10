@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clínica Veterinária no Rio de Janeiro. Atendimento humanizado, emergência, cirurgias, exames e vacinas para seu pet. Agende uma consulta!">
+    <meta name="keywords" content="veterinário rio de janeiro, clínica veterinária rj, veterinário 24 horas, consulta pet, vacina cachorro, castração rj">
+    <title>Veterinário no Rio de Janeiro | Clínica Pet de Excelência</title>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VeterinaryCare",
+      "name": "Clínica Veterinária RJ",
+      "image": "https://via.placeholder.com/600x400?text=Clinica+Veterinaria",
+      "@id": "",
+      "url": "https://www.seusite.com.br",
+      "telephone": "+5521999999999",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Exemplo, 123",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "postalCode": "20000-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -22.9068,
+        "longitude": -43.1729
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <style>
+        /* CSS Reset e Variáveis */
+        :root {
+            --primary-color: #007BFF;
+            --secondary-color: #28A745;
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+            --white: #ffffff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { color: var(--text-color); background-color: var(--bg-color); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        
+        /* Tipografia de Alta Legibilidade */
+        h1, h2, h3 { color: #1a1a1a; margin-bottom: 15px; }
+        p { margin-bottom: 15px; }
+
+        /* Componentes / Botões */
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-align: center;
+            transition: background 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn-primary:hover { background-color: #218838; }
+
+        /* Header e Navegação */
+        header { background: var(--white); box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; max-width: 1200px; margin: auto; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-color); }
+        .nav-links { list-style: none; display: flex; gap: 20px; }
+        .nav-links li a:hover { color: var(--primary-color); }
+        
+        /* Seção Hero (Acima da dobra - Crítico para Ads) */
+        .hero {
+            background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.8)), url('https://via.placeholder.com/1920x800?text=Cachorro+e+Gato+Veterinario') no-repeat center center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 { color: var(--white); font-size: 2.5rem; max-width: 800px; margin: 0 auto 20px; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px; }
+
+        /* Serviços (Conteúdo Denso para Índice de Qualidade) */
+        .services { padding: 60px 5%; max-width: 1200px; margin: auto; text-align: center; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+        .card { background: var(--white); padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        .card h3 { color: var(--primary-color); }
+
+        /* Prova Social (Aumenta Conversão) */
+        .testimonials { background: var(--white); padding: 60px 5%; text-align: center; }
+        .review { max-width: 600px; margin: 20px auto; font-style: italic; color: #555; }
+
+        /* Contato e Transparência */
+        .contact-section { padding: 60px 5%; max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px; }
+        .contact-info, .contact-form { flex: 1; min-width: 300px; }
+        .contact-form form { display: flex; flex-direction: column; gap: 15px; }
+        .contact-form input, .contact-form textarea { padding: 12px; border: 1px solid #ccc; border-radius: 5px; width: 100%; }
+        .contact-form button { border: none; cursor: pointer; }
+
+        /* Footer (Obrigatório conter CNPJ para políticas do Google) */
+        footer { background: #1a1a1a; color: #ccc; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
+        footer a { color: var(--primary-color); }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .nav-links { display: none; /* Em um site real, adicione um menu hamburger */ }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">VetRio Clínica</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <a href="https://wa.me/5521999999999" class="btn-primary" style="padding: 10px 20px; font-size: 1rem;">Whatsapp</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>O Melhor Cuidado Veterinário no Rio de Janeiro para o Seu Pet</h1>
+            <p>Consultas, vacinas, cirurgias e exames com uma equipe apaixonada por animais. Estrutura completa e atendimento humanizado na sua região.</p>
+            <a href="#contato" class="btn-primary">Agendar Consulta Agora</a>
+        </section>
+
+        <section id="servicos" class="services">
+            <h2>Nossos Serviços Veterinários</h2>
+            <p>Estrutura moderna para garantir a saúde e o bem-estar de cães, gatos e animais silvestres no RJ.</p>
+            
+            <div class="services-grid">
+                <div class="card">
+                    <h3>Consultas Clínicas</h3>
+                    <p>Atendimento preventivo e de rotina para avaliar a saúde geral do seu pet, focando em longevidade e qualidade de vida.</p>
+                </div>
+                <div class="card">
+                    <h3>Vacinação e Vermifugação</h3>
+                    <p>Mantenha a carteirinha do seu pet em dia com vacinas importadas e protocolos atualizados contra as principais doenças.</p>
+                </div>
+                <div class="card">
+                    <h3>Exames Laboratoriais e Imagem</h3>
+                    <p>Raio-X, ultrassonografia e exames de sangue com resultados rápidos para um diagnóstico preciso e seguro.</p>
+                </div>
+                <div class="card">
+                    <h3>Cirurgias e Castração</h3>
+                    <p>Centro cirúrgico equipado com anestesia inalatória e monitoramento completo para garantir a máxima segurança em procedimentos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>O que dizem nossos clientes</h2>
+            <div class="review">
+                "Excelente atendimento! Salvaram meu cachorro durante uma emergência de madrugada. A equipe é muito atenciosa e a clínica é impecável."<br>
+                <strong>- Mariana S., Copacabana / RJ</strong>
+            </div>
+            <div class="review">
+                "Levo meus gatos para vacinar todos os anos. Confio de olhos fechados nos profissionais da VetRio."<br>
+                <strong>- Carlos E., Tijuca / RJ</strong>
+            </div>
+        </section>
+
+        <section id="sobre" class="contact-section">
+            <div class="contact-info">
+                <h2>Visite Nossa Clínica no RJ</h2>
+                <p>Estamos prontos para receber você e seu pet. Entre em contato para agendamentos ou dúvidas.</p>
+                <p><strong>📍 Endereço:</strong> Rua Exemplo, 123 - Centro, Rio de Janeiro - RJ, 20000-000</p>
+                <p><strong>📞 Telefone / WhatsApp:</strong> (21) 99999-9999</p>
+                <p><strong>⏰ Horário de Funcionamento:</strong> Segunda a Sexta: 08:00 às 18:00 | Sábado: 08:00 às 14:00</p>
+            </div>
+
+            <div id="contato" class="contact-form">
+                <h2>Agende um Horário</h2>
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Formulário enviado com sucesso!');">
+                    <input type="text" name="nome" placeholder="Seu Nome" required>
+                    <input type="tel" name="telefone" placeholder="Seu Telefone / WhatsApp" required>
+                    <input type="text" name="pet" placeholder="Nome do Pet" required>
+                    <textarea name="mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+                    <button type="submit" class="btn-primary">Enviar Solicitação</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Clínica Veterinária RJ. Todos os direitos reservados.</p>
+        <p><strong>Razão Social:</strong> Clínica Pet Exemplo LTDA | <strong>CNPJ:</strong> 41.776.049/0001-18</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+    </footer>
+
+</body>
+</html>
